@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo Financeiro</title>
+    <link rel="stylesheet" href="static/portal.css">
+</head>
+<body style="background-image: url('static/robot.png');">
+    <div class="header"></div>
+    <img src="static\\Logo - Grupo Koch.png" alt="Logo da Empresa" width="250">
+    <h1>Robô Financeiro</h1>
+    <form id="roboForm" action="/operar-robo" method="post">
+        <label for="data">Insira a data de operação:</label>
+        <input type="date" id="data" name="data_recebida">
+        <button type="submit">Operar Robô</button>
+    </form>
+    <div id="resultado">
+        {% if error %}
+            <p style="color: red;"><strong>{{ error }}</strong></p>
+        {% endif %}
+        {% if success %}
+            <p style="color: green;"><strong>{{ success }}</strong></p>
+        {% endif %}
+    </div>
+</body>
+</html>

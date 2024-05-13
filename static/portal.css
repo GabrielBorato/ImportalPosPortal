@@ -1,0 +1,38 @@
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+button {
+    margin-top: 20px; /* Espaçamento entre o cabeçalho e o botão */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000; /* Cor vermelha */
+    color: #ffffff; /* Cor do texto branco */
+    border: none;
+    border-radius: 20px; /* Borda arredondada */
+    cursor: pointer;
+    font-weight: bold; /* Texto em negrito */
+}
+
+label {
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    
+}
+#data {
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaçamento superior */
+}

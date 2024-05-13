@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "name": "painelposportal",
+            "script": "./jacinto/Scripts/python.exe",
+            "args": "login.py",
+            "env": {
+                "PORT": "5050"
+            }
+        }
+    ]
+}
